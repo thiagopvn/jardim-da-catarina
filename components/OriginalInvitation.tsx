@@ -295,6 +295,7 @@ export default function OriginalInvitation({ showIntro = false }: OriginalInvita
                     fill
                     className="object-cover"
                     priority
+                    quality={90}
                     sizes="(max-width: 640px) 256px, (max-width: 768px) 288px, (max-width: 1024px) 320px, 384px"
                   />
                 </div>

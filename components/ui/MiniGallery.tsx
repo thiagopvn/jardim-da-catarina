@@ -58,6 +58,7 @@ const MiniGallery = () => {
                 className="object-cover"
                 sizes="(max-width: 640px) 45vw, (max-width: 768px) 40vw, 300px"
                 loading="lazy"
+                quality={80}
               />
 
               {/* Decorative overlay on hover */}

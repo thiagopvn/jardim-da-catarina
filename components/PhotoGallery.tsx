@@ -51,7 +51,9 @@ const PhotoGallery: React.FC<PhotoGalleryProps> = ({ onComplete }) => {
               alt={photos[currentPhoto].alt}
               fill
               className="object-cover"
-              priority
+              priority={currentPhoto === 0}
+              loading={currentPhoto > 0 ? "lazy" : undefined}
+              quality={85}
             />
             <motion.div
               className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"

@@ -148,7 +148,7 @@ const ButterflyAnimation: React.FC = () => {
     ]
 
     // Limita número de borboletas baseado no tamanho da tela para melhor performance
-    const butterflyCount = screenDimensions.width < 640 ? 8 : screenDimensions.width < 1024 ? 12 : 15
+    const butterflyCount = screenDimensions.width < 640 ? 5 : screenDimensions.width < 1024 ? 8 : 12
     const images = allImages.slice(0, butterflyCount)
 
     const sizeBase = screenDimensions.width < 640 ? 25 : screenDimensions.width < 1024 ? 35 : 45
@@ -228,7 +228,9 @@ const ButterflyAnimation: React.FC = () => {
                 width={butterfly.size}
                 height={butterfly.size}
                 className="drop-shadow-lg opacity-95"
-                priority={butterfly.id < 5} // Prioriza carregamento das primeiras 5
+                priority={butterfly.id < 2} // Prioriza carregamento apenas das 2 primeiras
+                loading={butterfly.id >= 2 ? "lazy" : undefined} // Lazy load para as demais
+                quality={75} // Reduz qualidade para 75% (imperceptível visualmente)
               />
             </motion.div>
           </motion.div>
