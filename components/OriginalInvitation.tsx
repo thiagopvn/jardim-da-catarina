@@ -478,14 +478,31 @@ export default function OriginalInvitation({ showIntro = false }: OriginalInvita
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="space-y-4"
+              className="space-y-6"
             >
-              <p className="font-magical text-2xl text-candy-pink">
-                Com amor,
-              </p>
-              <p className="font-elegant text-xl text-gray-700">
-                Família de Catarina
-              </p>
+              <div className="space-y-4">
+                <p className="font-magical text-2xl text-candy-pink">
+                  Com amor,
+                </p>
+                <p className="font-elegant text-xl text-gray-700">
+                  Família de Catarina
+                </p>
+              </div>
+
+              {/* Mensagem especial dos pais */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.3 }}
+                className="pt-6 border-t border-pink-200/50"
+              >
+                <p className="text-sm sm:text-base text-gray-500 italic flex items-center justify-center gap-2 flex-wrap">
+                  <span className="text-pink-400">💖</span>
+                  <span>Convite feito integralmente pelo papai e mamãe da Catarina</span>
+                  <span className="text-pink-400">💖</span>
+                </p>
+              </motion.div>
             </motion.div>
           </footer>
         </motion.div>
