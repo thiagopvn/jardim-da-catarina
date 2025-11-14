@@ -13,10 +13,14 @@ export const metadata: Metadata = {
   title: 'Convite Catarina - 1 Aninho',
   description: 'Venha celebrar o primeiro aninho da princesa Catarina no Jardim Encantado',
   keywords: 'convite, aniversário, 1 ano, catarina, jardim encantado',
+  icons: {
+    icon: '/CATARINAMOLDURA.png',
+    apple: '/CATARINAMOLDURA.png',
+  },
   openGraph: {
     title: 'Convite Catarina - 1 Aninho',
     description: 'Venha celebrar o primeiro aninho da princesa Catarina',
-    images: ['/images/og-image.jpg'],
+    images: ['/CATARINAMOLDURA.png'],
     type: 'website',
   },
   robots: 'noindex, nofollow',
@@ -31,8 +35,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
       </head>
       <body className={`${inter.className} ${dancingScript.variable} antialiased`}>
