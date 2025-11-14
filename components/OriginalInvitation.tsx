@@ -327,12 +327,12 @@ export default function OriginalInvitation({ showIntro = false }: OriginalInvita
                 animate={{ opacity: 1 }}
                 transition={{ delay: 3, duration: 0.8 }}
               >
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 text-green-700">
+                <div className="flex flex-row items-center justify-center gap-3 sm:gap-6 md:gap-8 text-green-700 flex-wrap">
                   <div className="flex items-center gap-2">
                     <span className="text-xl sm:text-2xl">📅</span>
                     <div className="text-left">
-                      <p className="font-semibold text-sm sm:text-base">Sáb</p>
-                      <p className="text-base sm:text-lg md:text-xl font-bold">13 de dezembro</p>
+                      <p className="font-semibold text-sm sm:text-base whitespace-nowrap">Sáb</p>
+                      <p className="text-sm sm:text-base md:text-lg font-bold whitespace-nowrap">13 de dezembro</p>
                     </div>
                   </div>
                   <div className="hidden sm:flex items-center gap-2">
@@ -341,8 +341,8 @@ export default function OriginalInvitation({ showIntro = false }: OriginalInvita
                   <div className="flex items-center gap-2">
                     <span className="text-xl sm:text-2xl">⏰</span>
                     <div className="text-left">
-                      <p className="font-semibold text-sm sm:text-base">Começa</p>
-                      <p className="text-base sm:text-lg md:text-xl font-bold">às 16h</p>
+                      <p className="font-semibold text-sm sm:text-base whitespace-nowrap">Começa</p>
+                      <p className="text-sm sm:text-base md:text-lg font-bold whitespace-nowrap">às 16h</p>
                     </div>
                   </div>
                 </div>
