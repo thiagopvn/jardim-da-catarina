@@ -146,12 +146,12 @@ export default function RSVPModal({ isOpen, onClose }: RSVPModalProps) {
                     {/* Name Input */}
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Seu Nome Completo
+                        Nome e Sobrenome
                       </label>
                       <input
-                        {...register('name', { required: 'Por favor, insira seu nome' })}
+                        {...register('name', { required: 'Por favor, insira seu nome e sobrenome' })}
                         className="w-full px-4 py-3 rounded-xl border border-candy-pink/30 focus:outline-none focus:ring-2 focus:ring-candy-pink/50 transition-all"
-                        placeholder="Digite seu nome"
+                        placeholder="Digite seu nome e sobrenome"
                       />
                       {errors.name && (
                         <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
