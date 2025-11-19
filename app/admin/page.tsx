@@ -281,12 +281,12 @@ export default function AdminPage() {
                         <td className="px-6 py-4 text-sm text-gray-600 text-center">
                           {rsvp.children || 0}
                         </td>
-                        <td className="px-6 py-4 text-sm text-gray-600 max-w-xs">
+                        <td className="px-6 py-4 text-sm text-gray-600 max-w-xs break-words">
                           {rsvp.childrenNames && rsvp.childrenNames.length > 0
                             ? rsvp.childrenNames.join(', ')
                             : '-'}
                         </td>
-                        <td className="px-6 py-4 text-sm text-gray-600 max-w-xs truncate">
+                        <td className="px-6 py-4 text-sm text-gray-600 max-w-md break-words whitespace-pre-wrap">
                           {rsvp.message || '-'}
                         </td>
                         <td className="px-6 py-4 text-sm text-gray-500">
