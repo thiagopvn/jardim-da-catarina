@@ -14,6 +14,7 @@ import RSVPModal from '@/components/forms/RSVPModal'
 
 // Dynamic imports for heavy components
 const ParallaxSection = dynamic(() => import('@/components/ui/ParallaxSection'), { ssr: false })
+const VideoGallery = dynamic(() => import('@/components/VideoGallery'), { ssr: false })
 
 interface OriginalInvitationProps {
   showIntro?: boolean;
@@ -450,6 +451,9 @@ export default function OriginalInvitation({ showIntro = false }: OriginalInvita
 
           {/* Mini Gallery Section */}
           <MiniGallery />
+
+          {/* Video Gallery Section - New Creative Videos */}
+          <VideoGallery />
 
           {/* RSVP Section - Responsive */}
           <section className="py-8 sm:py-12 px-4 relative flex justify-center items-center">
